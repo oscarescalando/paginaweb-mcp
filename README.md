@@ -4,15 +4,51 @@ Una guía completa para aprender desarrollo web desde los fundamentos hasta conc
 
 ## 📚 Tabla de Contenidos
 
-1. [HTML: El Esqueleto de la Web](#html-el-esqueleto-de-la-web)
-2. [CSS: El Estilo de tu Web](#css-el-estilo-de-tu-web)
-3. [Control de Versiones con Git](#control-de-versiones-con-git)
-4. [Estructura de una Página Web](#estructura-de-una-página-web)
-5. [Diseño Responsivo](#diseño-responsivo)
-6. [Tipos de Páginas Web](#tipos-de-páginas-web)
-7. [APIs: Conectando Servicios](#apis-conectando-servicios)
-8. [Bases de Datos](#bases-de-datos)
-9. [Historia del Desarrollo Web](#historia-del-desarrollo-web)
+1. [Historia del Desarrollo Web](#historia-del-desarrollo-web)
+2. [HTML: El Esqueleto de la Web](#html-el-esqueleto-de-la-web)
+3. [CSS: El Estilo de tu Web](#css-el-estilo-de-tu-web)
+4. [Control de Versiones con Git](#control-de-versiones-con-git)
+5. [Estructura de una Página Web](#estructura-de-una-página-web)
+6. [Diseño Responsivo](#diseño-responsivo)
+7. [Tipos de Páginas Web](#tipos-de-páginas-web)
+8. [APIs: Conectando Servicios](#apis-conectando-servicios)
+9. [Bases de Datos](#bases-de-datos)
+
+---
+
+## 📜 Historia del Desarrollo Web
+
+### Timeline del desarrollo web
+
+#### 1990 - El nacimiento de la Web
+Tim Berners-Lee crea el primer navegador web y el protocolo HTTP.
+
+#### 1993 - Primer navegador gráfico
+Mosaic permite ver imágenes junto con texto.
+
+#### 1995 - JavaScript llega a la web
+Brendan Eich crea JavaScript en solo 10 días.
+
+#### 1996 - CSS revoluciona el diseño
+Se separa el contenido de la presentación.
+
+#### 1999 - Web 2.0 emerge
+Sitios dinámicos e interactivos se vuelven populares.
+
+#### 2004 - Era de las redes sociales
+Facebook marca el inicio de la web social.
+
+#### 2008 - HTML5 y CSS3
+Nuevos estándares traen capacidades multimedia.
+
+#### 2010 - Diseño responsivo
+Ethan Marcotte introduce el concepto de responsive design.
+
+#### 2015 - Progressive Web Apps
+Las PWAs difuminan la línea entre web y apps nativas.
+
+#### Hoy - IA y el futuro
+La inteligencia artificial está transformando el desarrollo web.
 
 ---
 
@@ -412,42 +448,6 @@ connection.query(
 - Valida entrada de usuarios
 - Encripta contraseñas
 - Limita permisos de usuario
-
----
-
-## 📜 Historia del Desarrollo Web
-
-### Timeline del desarrollo web
-
-#### 1990 - El nacimiento de la Web
-Tim Berners-Lee crea el primer navegador web y el protocolo HTTP.
-
-#### 1993 - Primer navegador gráfico
-Mosaic permite ver imágenes junto con texto.
-
-#### 1995 - JavaScript llega a la web
-Brendan Eich crea JavaScript en solo 10 días.
-
-#### 1996 - CSS revoluciona el diseño
-Se separa el contenido de la presentación.
-
-#### 1999 - Web 2.0 emerge
-Sitios dinámicos e interactivos se vuelven populares.
-
-#### 2004 - Era de las redes sociales
-Facebook marca el inicio de la web social.
-
-#### 2008 - HTML5 y CSS3
-Nuevos estándares traen capacidades multimedia.
-
-#### 2010 - Diseño responsivo
-Ethan Marcotte introduce el concepto de responsive design.
-
-#### 2015 - Progressive Web Apps
-Las PWAs difuminan la línea entre web y apps nativas.
-
-#### Hoy - IA y el futuro
-La inteligencia artificial está transformando el desarrollo web.
 
 ---
 

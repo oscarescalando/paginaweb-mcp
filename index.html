@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Desarrollo Web | Aprende HTML, CSS y más</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header con navegación -->
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-code"></i>
+                    <span>Web Dev Guide</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#historia">Historia</a></li>
+                    <li><a href="#html">HTML</a></li>
+                    <li><a href="#css">CSS</a></li>
+                    <li><a href="#control-versiones">Git</a></li>
+                    <li><a href="#estructura">Estructura</a></li>
+                    <li><a href="#responsivo">Responsivo</a></li>
+                    <li><a href="#tipos-web">Tipos de Web</a></li>
+                    <li><a href="#apis">APIs</a></li>
+                    <li><a href="#databases">Bases de Datos</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Aprende Desarrollo Web</h1>
+            <p class="hero-subtitle">Tu guía completa desde HTML hasta bases de datos</p>
+            <a href="#historia" class="cta-button">Comenzar el viaje</a>
+        </div>
+        <div class="hero-animation">
+            <div class="code-window">
+                <div class="window-header">
+                    <div class="window-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="code-content">
+                    <pre><code></code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Historia del Desarrollo Web -->
+    <section id="historia" class="section">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-history section-icon"></i>
+                <h2>Historia del Desarrollo Web</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">1990</div>
+                    <div class="timeline-content">
+                        <h3>El nacimiento de la Web</h3>
+                        <p>Tim Berners-Lee crea el primer navegador web y el protocolo HTTP.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">1993</div>
+                    <div class="timeline-content">
+                        <h3>Primer navegador gráfico</h3>
+                        <p>Mosaic permite ver imágenes junto con texto.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">1995</div>
+                    <div class="timeline-content">
+                        <h3>JavaScript llega a la web</h3>
+                        <p>Brendan Eich crea JavaScript en solo 10 días.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">1996</div>
+                    <div class="timeline-content">
+                        <h3>CSS revoluciona el diseño</h3>
+                        <p>Se separa el contenido de la presentación.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">1999</div>
+                    <div class="timeline-content">
+                        <h3>Web 2.0 emerge</h3>
+                        <p>Sitios dinámicos e interactivos se vuelven populares.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2004</div>
+                    <div class="timeline-content">
+                        <h3>Era de las redes sociales</h3>
+                        <p>Facebook marca el inicio de la web social.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2008</div>
+                    <div class="timeline-content">
+                        <h3>HTML5 y CSS3</h3>
+                        <p>Nuevos estándares traen capacidades multimedia.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2010</div>
+                    <div class="timeline-content">
+                        <h3>Diseño responsivo</h3>
+                        <p>Ethan Marcotte introduce el concepto de responsive design.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2015</div>
+                    <div class="timeline-content">
+                        <h3>Progressive Web Apps</h3>
+                        <p>Las PWAs difuminan la línea entre web y apps nativas.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Hoy</div>
+                    <div class="timeline-content">
+                        <h3>IA y el futuro</h3>
+                        <p>La inteligencia artificial está transformando el desarrollo web.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección HTML -->
+    <section id="html" class="section alternate">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-html5 section-icon"></i>
+                <h2>HTML: El Esqueleto de la Web</h2>
+            </div>
+            <div class="content-grid">
+                <div class="content-main">
+                    <p>HTML (HyperText Markup Language) es el lenguaje de marcado estándar para crear páginas web. Define la estructura y el contenido de una página mediante elementos y etiquetas.</p>
+                    
+                    <h3>Estructura básica de HTML</h3>
+                    <div class="code-example">
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Mi página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Título principal&lt;/h1&gt;
+    &lt;p&gt;Un párrafo de texto&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </div>
+                    
+                    <h3>Elementos principales</h3>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-heading"></i> <strong>Encabezados:</strong> h1, h2, h3, h4, h5, h6</li>
+                        <li><i class="fas fa-paragraph"></i> <strong>Párrafos:</strong> p</li>
+                        <li><i class="fas fa-link"></i> <strong>Enlaces:</strong> a</li>
+                        <li><i class="fas fa-image"></i> <strong>Imágenes:</strong> img</li>
+                        <li><i class="fas fa-list"></i> <strong>Listas:</strong> ul, ol, li</li>
+                        <li><i class="fas fa-table"></i> <strong>Tablas:</strong> table, tr, td</li>
+                    </ul>
+                </div>
+                <div class="content-sidebar">
+                    <div class="info-card">
+                        <h4><i class="fas fa-lightbulb"></i> ¿Sabías que?</h4>
+                        <p>HTML fue creado por Tim Berners-Lee en 1991. La primera versión tenía solo 18 elementos.</p>
+                    </div>
+                    
+                    <div class="tips-card">
+                        <h4><i class="fas fa-check-circle"></i> Mejores prácticas</h4>
+                        <ul>
+                            <li>Usa HTML semántico</li>
+                            <li>Incluye atributos alt en imágenes</li>
+                            <li>Estructura con header, main y footer</li>
+                            <li>Valida tu código HTML</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Más secciones... -->
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
