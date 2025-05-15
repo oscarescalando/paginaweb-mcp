@@ -760,6 +760,41 @@ nav {
     animation: fadeIn 0.6s ease-out;
 }
 
+/* Estilos para las nuevas secciones */
+
+/* Conceptos Dev */
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-md);
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: var(--spacing-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.feature-item i {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-right: var(--spacing-sm);
+    min-width: 2rem;
+}
+
+.feature-item strong {
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+    display: block;
+    color: var(--dark-color);
+}
+
+.feature-item p {
+    margin-top: var(--spacing-xs);
+}
+
+.alternate .feature-item {
+    background-color: var(--light-color);
+}
+
 /* Media Queries para responsividad */
 @media (max-width: 1024px) {
     .content-grid {
@@ -787,6 +822,8 @@ nav {
         flex-direction: column;
         padding: var(--spacing-md);
         box-shadow: var(--shadow-md);
+        max-height: calc(100vh - 80px);
+        overflow-y: auto;
     }
     
     .nav-links.active {
@@ -855,5 +892,13 @@ nav {
     
     .section {
         padding: var(--spacing-lg) 0;
+    }
+    
+    .feature-item {
+        flex-direction: column;
+    }
+    
+    .feature-item i {
+        margin-bottom: var(--spacing-xs);
     }
 }
