@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Web Acelerado con IA</title>
+    <link rel="stylesheet" href="css/styles2.css">
+    <!-- Iconos de Font Awesome (puedes elegir otros) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts (Opcional, para tipografía moderna) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-brain"></i> WebDev & IA
+            </div>
+            <ul>
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#historia">Historia Web</a></li>
+                <li><a href="#anatomia">Anatomía Web</a></li>
+                <li><a href="#conceptos">Conceptos Dev</a></li>
+                <li><a href="#ia-webdev">IA en WebDev</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Desarrollo Web Potenciado por <span class="highlight">Inteligencia Artificial</span></h1>
+                <p>Descubre cómo la IA está transformando la creación de sitios web, haciéndola más rápida, eficiente e innovadora que nunca.</p>
+                <a href="#ia-webdev" class="cta-button">Explora el Futuro <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-image">
+                <!-- Puedes usar una imagen abstracta o relacionada con IA y código -->
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="IA y Desarrollo Web">
+            </div>
+        </section>
+
+        <!-- CONTENIDO 1: HISTORIA DE LA WEB -->
+        <section id="historia" class="content-section">
+            <div class="container">
+                <h2><i class="fas fa-landmark"></i> Historia de la Web: De sus Orígenes al Futuro</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-hourglass-start"></i></div>
+                        <div class="timeline-content">
+                            <h3>1. Los Inicios (Pre-Web)</h3>
+                            <p>La idea de redes de información existía antes de la web. ARPANET (finales de los 60) fue una red militar experimental en EE. UU., precursora de Internet, conectando computadoras de forma rudimentaria.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-globe"></i></div>
+                        <div class="timeline-content">
+                            <h3>2. Nacimiento de la World Wide Web (Principios de los 90)</h3>
+                            <p>Tim Berners-Lee (CERN, 1989-1991) propone y desarrolla la WWW para compartir información entre científicos. Conceptos clave: HTML, HTTP, URLs y el primer servidor/navegador web.</p>
+                            <p><strong>Web 1.0 (hasta principios de los 2000):</strong> Web estática, principalmente de lectura. Los usuarios consumen información. Sitios como "folletos digitales".</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-users"></i></div>
+                        <div class="timeline-content">
+                            <h3>3. La Web Dinámica y Social (Web 2.0)</h3>
+                            <p>Mediados de los 2000 en adelante: El usuario se convierte en participante activo. Características: Interactividad, colaboración, redes sociales (Facebook, Twitter), blogs, wikis, aplicaciones web dinámicas.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-cogs"></i></div>
+                        <div class="timeline-content">
+                            <h3>4. Hacia la Web Inteligente y Descentralizada (Web 3.0 y Más Allá)</h3>
+                            <p><strong>Web 3.0 (Concepto en evolución):</strong> Web Semántica (datos interconectados), Inteligencia Artificial para personalizar, descentralización (Blockchain), mayor privacidad y control de datos.</p>
+                            <p><strong>El Futuro:</strong> Integración con Realidad Virtual/Aumentada, IoT, experiencias más inmersivas y personalizadas.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="summary-box">
+                    <i class="fas fa-lightbulb"></i> La web ha evolucionado de una red estática a un ecosistema dinámico, social e inteligente, impulsado por la innovación y la participación activa de los usuarios.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTENIDO 2: ANATOMÍA Y TECNOLOGÍAS DE UNA PÁGINA WEB -->
+        <section id="anatomia" class="content-section alt-bg">
+            <div class="container">
+                <h2><i class="fas fa-microscope"></i> Anatomía y Tecnologías de una Página Web</h2>
+                <p><em>(Aquí adaptarías el contenido de "Anatomía y Tecnologías", usando tarjetas, listas y iconos. Por ejemplo:)</em></p>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-icon"><i class="fab fa-html5"></i></div>
+                        <h3>HTML</h3>
+                        <p>El esqueleto: define la estructura y el contenido.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fab fa-css3-alt"></i></div>
+                        <h3>CSS</h3>
+                        <p>El estilo: controla la apariencia visual y el diseño.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fab fa-js-square"></i></div>
+                        <h3>JavaScript</h3>
+                        <p>La interactividad: añade dinamismo y funcionalidad.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-server"></i></div>
+                        <h3>Backend</h3>
+                        <p>Tecnologías del servidor, bases de datos, APIs.</p>
+                    </div>
+                     <div class="card">
+                        <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Diseño Responsivo</h3>
+                        <p>Adaptación a diferentes tamaños de pantalla.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-search"></i></div>
+                        <h3>SEO</h3>
+                        <p>Optimización para motores de búsqueda.</p>
+                    </div>
+                </div>
+                <p class="summary-box">
+                    <i class="fas fa-puzzle-piece"></i> Comprender estos componentes es clave para construir experiencias web efectivas y modernas.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTENIDO 3: CONCEPTOS FUNDAMENTALES PARA DESARROLLADORES -->
+        <section id="conceptos" class="content-section">
+            <div class="container">
+                <h2><i class="fas fa-book-open"></i> Conceptos Fundamentales para Desarrolladores</h2>
+                 <p><em>(Aquí adaptarías el contenido de "Conceptos Fundamentales", usando acordeones, tabs o tarjetas.)</em></p>
+                <div class="grid-cards">
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-terminal"></i></div>
+                        <h3>Consola (CLI)</h3>
+                        <p>Interfaz de texto para interactuar con el sistema y ejecutar comandos.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>IDE</h3>
+                        <p>Entorno de Desarrollo Integrado que consolida herramientas para programar.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-microphone-alt"></i></div>
+                        <h3>Live Coding</h3>
+                        <p>Práctica de programar en tiempo real, a menudo como performance artística.</p>
+                    </div>
+                </div>
+                <p class="summary-box">
+                    <i class="fas fa-tools"></i> Estas herramientas son la base del día a día de cualquier desarrollador de software.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTENIDO 4: POTENCIANDO EL DESARROLLO WEB CON IA -->
+        <section id="ia-webdev" class="content-section alt-bg">
+            <div class="container">
+                <h2><i class="fas fa-robot"></i> Potenciando el Desarrollo Web con IA</h2>
+                <p>La Inteligencia Artificial no es solo una tendencia, es una revolución en cómo creamos y experimentamos la web. Sus aplicaciones son vastas y su impacto, profundo.</p>
+                
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        <div class="feature-content">
+                            <h3>Aumento de Eficiencia</h3>
+                            <p>Automatización de tareas repetitivas (generación de código, testing) liberando tiempo para la creatividad y la innovación.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-paint-brush"></i></div>
+                        <div class="feature-content">
+                            <h3>Diseño Inteligente</h3>
+                            <p>Generación de layouts, optimización de imágenes, y personalización de UI asistida por IA (Ej: Midjourney, DALL-E, Adobe Sensei).</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-code"></i></div>
+                        <div class="feature-content">
+                            <h3>Codificación Asistida</h3>
+                            <p>Herramientas como GitHub Copilot sugieren código, detectan errores y ayudan en la refactorización.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="feature-content">
+                            <h3>Optimización y Personalización</h3>
+                            <p>Análisis de datos para mejorar UX, SEO asistido por IA, y creación de experiencias hiper-personalizadas.</p>
+                        </div>
+                    </div>
+                     <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="feature-content">
+                            <h3>Desafíos y Ética</h3>
+                            <p>Consideraciones sobre sesgos algorítmicos, privacidad de datos y la necesidad de mantener el juicio humano.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="summary-box call-to-action">
+                    <i class="fas fa-rocket"></i> La IA es tu aliada estratégica para construir el futuro de la web. ¡Adóptala y transforma tu forma de desarrollar!
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 WebDev & IA. Potenciando el futuro digital.</p>
+        <div class="social-icons">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/script2.js"></script>
+</body>
+</html>
