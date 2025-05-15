@@ -1,0 +1,9 @@
+Crea un archivo HTML completo que contenga, sin depender de archivos externos, un simulador 3D en tercera persona donde pueda conducir un coche por una ciudad futurista. El entorno debe incluir:
+– Un modelo básico de coche hecho con geometrías primitivas (cajas, cilindros).
+– Una cámara en tercera persona que siga al coche desde atrás.
+– Calles, edificios y luces de neón que simulen una ciudad moderna y minimalista.
+– Un plano de suelo con textura (como asfalto).
+– El coche debe poder moverse hacia adelante/atrás con las teclas W y S, y girar con A y D.
+– Tecla Shift para activar “modo turbo” (mayor velocidad) durante unos segundos.
+– El coche debe mantenerse siempre sobre el suelo sin salirse del entorno.
+Todo el código debe estar contenido en un único archivo HTML, incluyendo el JavaScript en línea. Usa Three.js vía CDN para una experiencia accesible y totalmente funcional desde el navegador.
