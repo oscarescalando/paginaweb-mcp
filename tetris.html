@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Tetris</title>
+    <link rel="stylesheet" href="assets/css/tetris.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-board"></canvas>
+        <div id="ui-panel">
+            <button id="reset-btn" class="ui-button large-button">
+                <svg viewBox="0 0 24 24" fill="white" width="24px" height="24px"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+            </button>
+            
+            <div class="next-piece-area">
+                <p>SIGUIENTE</p>
+                <canvas id="next-piece-canvas"></canvas>
+            </div>
+
+            <div class="score-area">
+                <p>PUNTOS</p>
+                <div id="score">0</div>
+            </div>
+            
+            <div class="score-area"> <!-- Placeholder, not used in current logic but seen in video -->
+                <p>NIVEL</p> 
+                <div id="level">1</div>
+            </div>
+
+            <button id="pause-btn" class="ui-button large-button">
+                <svg id="pause-icon" viewBox="0 0 24 24" fill="white" width="24px" height="24px"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                <svg id="play-icon" viewBox="0 0 24 24" fill="white" width="24px" height="24px" style="display:none;"><path d="M0 0h24v24H0z" fill="none"/><path d="M8 5v14l11-7z"/></svg>
+            </button>
+        </div>
+    </div>
+
+    <div id="controls">
+        <button id="left-btn" class="control-button">◀</button>
+        <button id="right-btn" class="control-button">▶</button>
+        <button id="down-btn" class="control-button">▼</button>
+        <button id="rotate-btn" class="control-button">↻</button>
+    </div>
+
+    <div id="game-over-message" style="display:none;">
+        GAME OVER
+        <button id="restart-game-btn">Reiniciar</button>
+    </div>
+
+    <script src="assets/js/tetris.js"></script>
+</body>
+</html>

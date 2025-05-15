@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Video - Laguna Mucubají</title>
+    <link rel="stylesheet" href="assets/css/video.css">
+</head>
+<body>
+    <header>
+        <h1>Laguna Mucubají - An Interactive Experience</h1>
+    </header>
+
+    <main>
+        <section id="video-description">
+            <h2>Video Description</h2>
+            <p>
+                This captivating video showcases the breathtaking beauty of Laguna Mucubají, a glacial lake located
+                in the Sierra Nevada National Park in the Venezuelan Andes. The footage begins with ground-level
+                views from a wooden pier, capturing visitors enjoying the serene landscape. It then transitions
+                to stunning aerial shots, offering a panoramic perspective of the lake, surrounding mountains,
+                pine forests, and the unique Andean páramo ecosystem. The video concludes with the logo of
+                "VZLA AERIAL," presumably the creators of this visual journey.
+            </p>
+        </section>
+
+        <section id="video-player-section">
+            <h2>Watch the Video</h2>
+            <div class="video-container">
+                <video id="interactiveVideo" controls width="720">
+                    <!-- 
+                        IMPORTANT: You need to download the video from the prompt 
+                        (or use a direct link if available) and place it in the same
+                        directory as this HTML file, then update the src.
+                        For demonstration, I'm using a placeholder.
+                        Replace "your-video-file.mp4" with the actual video file name.
+                    -->
+                    <source src="assets/video/mucubaji.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div id="tooltipDisplay" class="tooltip-display"></div>
+            </div>
+        </section>
+
+        
+
+        <section id="tooltips-list-section">
+            <h2>Interactive Tooltips</h2>
+            <p>Click on a tooltip description to jump to that part of the video.</p>
+            <ul id="tooltipsList">
+                <!-- Tooltips will be dynamically added here by JavaScript -->
+            </ul>
+        </section>
+
+        <section id="prompt-section">
+            <h2>Prompt Used to Generate This Page</h2>
+            <pre><code>
+Crea una página web donde este video esté incrustado de un modo interactivo, no solo para cumplir las funciones básicas de reproducción del video, sino para que en momentos concretos de la reproducción del video aparezcan tooltips donde pueda ver una descripción de los personajes y objetos principales. Por lo que primero deberás analizar el video, decidir los tooltips y finalmente crear la web.
+Los tooltips se deben listar debajo del video y tener la opcion de al realizar click sobre el llevar a la seccion del video donde esta relacionado el tooltips
+Crea una seccion de descripcion del viedo
+Tambien incluye una seccion llamada promt donde copies este promt que genera la pagina
+            </code></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Interactive Video Demo</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

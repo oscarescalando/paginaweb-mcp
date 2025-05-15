@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Flappy Bird</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #70c5ce;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    canvas {
+      background: #fff;
+      border: 2px solid #000;
+    }
+    .btn {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #ffcc00;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="game" width="320" height="480"></canvas>
+  <button id="startBtn" class="btn">Iniciar Juego</button>
+  <button id="restartBtn" class="btn">Reiniciar</button>
+
+  <script>
+    const canvas = document.getElementById("game");
+    const ctx = canvas.getContext("2d");
+
+    const startBtn = document.getElementById("startBtn");
+    const restartBtn = document.getElementById("restartBtn");
+
+    const GRAVITY = 0.5;
+    const FLAP = -8;
+
+    let bird, pipes, score, gameOver, frame, running;
+
+    function resetGame() {
+      bird = {
+        x: 50,
+        y: 150,
+        radius: 12,
+        velocity: 0,
+        draw() {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+          ctx.fillStyle = "orange";
+          ctx.fill();
+          ctx.closePath();
+        },
+        update() {
+          this.velocity += GRAVITY;
+          this.y += this.velocity;
+          if (this.y + this.radius > canvas.height || this.y - this.radius < 0) {
+            endGame();
+          }
+        },
+        flap() {
+          this.velocity = FLAP;
+        }
+      };
+
+      pipes = [];
+      score = 0;
+      gameOver = false;
+      frame = 0;
+      running = true;
+      restartBtn.style.display = "none";
+    }
+
+    const pipeWidth = 40;
+    const pipeGap = 100;
+
+    function generatePipe() {
+      const top = Math.floor(Math.random() * (canvas.height - pipeGap - 60)) + 20;
+      pipes.push({ x: canvas.width, top });
+    }
+
+    function drawPipe(pipe) {
+      ctx.fillStyle = "green";
+      ctx.fillRect(pipe.x, 0, pipeWidth, pipe.top);
+      ctx.fillRect(pipe.x, pipe.top + pipeGap, pipeWidth, canvas.height);
+    }
+
+    function updatePipes() {
+      for (let i = 0; i < pipes.length; i++) {
+        const p = pipes[i];
+        p.x -= 2;
+
+        if (
+          bird.x + bird.radius > p.x &&
+          bird.x - bird.radius < p.x + pipeWidth &&
+          (bird.y - bird.radius < p.top || bird.y + bird.radius > p.top + pipeGap)
+        ) {
+          endGame();
+        }
+
+        if (p.x + pipeWidth === bird.x) {
+          score++;
+        }
+      }
+
+      if (pipes.length && pipes[0].x + pipeWidth < 0) {
+        pipes.shift();
+      }
+    }
+
+    function drawScore() {
+      ctx.fillStyle = "#000";
+      ctx.font = "20px Arial";
+      ctx.fillText("Score: " + score, 10, 25);
+    }
+
+    function endGame() {
+      gameOver = true;
+      running = false;
+      ctx.fillStyle = "red";
+      ctx.font = "30px Arial";
+      ctx.fillText("Game Over", 80, canvas.height / 2);
+      restartBtn.style.display = "inline-block";
+    }
+
+    function loop() {
+      if (!running) return;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      bird.update();
+      bird.draw();
+
+      if (frame % 90 === 0) generatePipe();
+      updatePipes();
+      pipes.forEach(drawPipe);
+      drawScore();
+
+      frame++;
+      requestAnimationFrame(loop);
+    }
+
+    document.addEventListener("keydown", (e) => {
+      if (e.code === "Space" && running) {
+        bird.flap();
+      }
+    });
+
+    startBtn.addEventListener("click", () => {
+      startBtn.style.display = "none";
+      resetGame();
+      loop();
+    });
+
+    restartBtn.addEventListener("click", () => {
+      resetGame();
+      loop();
+    });
+
+    // Mostrar botón inicial
+    startBtn.style.display = "inline-block";
+  </script>
+</body>
+</html>

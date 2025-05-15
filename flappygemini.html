@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy HTML</title>
+    <link rel="stylesheet" href="assets/css/flappy.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="scoreDisplay">Puntuación: 0</div>
+        <div id="gameOverScreen" class="hidden">
+            <h1>¡Has perdido!</h1>
+            <p>Puntuación final: <span id="finalScore">0</span></p>
+            <button id="restartButton">Reiniciar</button>
+        </div>
+        <button id="startButton">Empezar Juego</button>
+    </div>
+    <script src="assets/js/flappy.js"></script>
+</body>
+</html>

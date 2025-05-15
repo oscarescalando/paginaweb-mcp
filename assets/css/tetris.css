@@ -1,0 +1,150 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #1e103f; /* Similar al fondo del espacio del video */
+    margin: 0;
+    font-family: 'Press Start 2P', cursive; /* Font pixelada (requiere importación o instalación) */
+    color: white;
+    overflow: hidden; /* Evita scrollbars si el contenido se desborda un poco */
+}
+
+/* Si no tienes 'Press Start 2P', usa una genérica */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+#game-container {
+    display: flex;
+    border: 4px solid #503070;
+    border-radius: 10px;
+    background-color: #2a184f; /* Un poco más claro para el contenedor */
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+#game-board {
+    border: 2px solid #705090;
+    background-color: #0f0821; /* Fondo del tablero de juego */
+}
+
+#ui-panel {
+    width: 150px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ui-button {
+    background-color: #c03030; /* Rojo para el X */
+    border: 2px solid #702020;
+    border-bottom-color: #501010;
+    border-right-color: #501010;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 2px #f05050; /* Borde interno más claro */
+}
+.ui-button.large-button {
+    width: 60px;
+    height: 60px;
+}
+.ui-button:active {
+    background-color: #a02020;
+    transform: translateY(1px);
+}
+
+
+.next-piece-area, .score-area {
+    background-color: #0f0821; /* Fondo oscuro como el tablero */
+    border: 2px solid #705090;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.next-piece-area p, .score-area p {
+    margin: 0 0 5px 0;
+    font-size: 0.7em;
+    color: #aaa;
+}
+
+#next-piece-canvas {
+    background-color: transparent; /* El fondo lo da el div */
+    display: block;
+    margin: 0 auto;
+}
+
+#score, #level {
+    font-size: 1.5em;
+    color: #ff00ff; /* Rosa para el score */
+}
+
+
+#controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.control-button {
+    width: 70px;
+    height: 70px;
+    background-color: #404060;
+    border: 2px solid #202030;
+    border-bottom-color: #101020;
+    border-right-color: #101020;
+    color: white;
+    font-size: 2em;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 3px #606080; /* Borde interno más claro */
+}
+
+.control-button:active {
+    background-color: #303050;
+    transform: translateY(2px);
+}
+
+#game-over-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2em;
+    border: 3px solid #ff00ff;
+}
+#game-over-message button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    font-size: 0.7em;
+    background-color: #c03030;
+    color: white;
+    border: 2px solid #702020;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+}
+#game-over-message button:hover {
+    background-color: #a02020;
+}
